@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Formulario de encuesta</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Student magazine Chemistry in Astronomy Survey Form</h1>
+    <p id="description" class="description text-center">
+      Thank you for dedicating your time to help us improve the magazine, and bring new content to you.
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        required placeholder="email@dominio.com"
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+    <div class="form-group">
+      <p>Which option best describes your current role?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select current role</option>
+        <option value="physics- student">Physics student</option>
+        <option value="astronomy- student">Astronomy student</option>
+        <option value="chemistry-student">Chemistry student</option>
+        
+        <option value="other">Other study area</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Would you recommend Chemistry in Astronomy to a friend or acquaintance?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Definitely</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />Maybe</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+        />Not sure</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>
+         What is your favorite feature of our scientific magazine?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="diversity">Diversity of authors and content</option>
+        <option value="editorial">Editorial quality</option>
+        <option value="community">Community</option>
+        <option value="periodicity">Periodicity</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        Where do you think we can improve ?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="generating-plan"
+          type="checkbox"
+          class="input-checkbox"
+        />Generating an outreach plan through social networks</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="involve-authors"
+          type="checkbox"
+          class="input-checkbox"
+        />Involve authors in the dissemination of articles</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="themes-all-ages"
+          type="checkbox"
+          class="input-checkbox"
+        />Themes for all ages</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="create-website"
+          type="checkbox"
+          class="input-checkbox"
+        />Create a website to share more information</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="presentations-and- congresses"
+          type="checkbox"
+          class="input-checkbox"
+        />Presentations and congresses</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="achieve-impact"
+          type="checkbox"
+          class="input-checkbox"
+        />Achieve greater impact.</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="videos"
+          type="checkbox"
+          class="input-checkbox"
+        />Videos</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="city-meetups"
+          type="checkbox"
+          class="input-checkbox"
+        />City Meetups</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="wiki"
+          type="checkbox"
+          class="input-checkbox"
+        />Wiki</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="forum"
+          type="checkbox"
+          class="input-checkbox"
+        />Forum</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="courses-topics"
+          type="checkbox"
+          class="input-checkbox"
+        />Courses focused on the topics covered</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>Any comments or suggestions?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+      
+    </div>
+   
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+        
+        
+      </button>
+      
+            <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </div>
+  </form>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
